@@ -1,3 +1,6 @@
+-- DAY 1
+
+
 CREATE DATABASE student_db;
 
 USE student_db;
@@ -15,6 +18,12 @@ INSERT INTO students VALUES
 (20250003, 'Ram', 'Maths', 22),
 (20250004, 'Bhishm', 'LLB', 20),
 (20250005, 'Karn', 'Buisness', 21);
+
+SELECT * FROM students;
+
+
+-- DAY 2
+
 
 INSERT INTO students VALUES
 (20250006, 'Laxman', 'Data Science', 19),
@@ -35,3 +44,22 @@ SELECT * FROM students WHERE age BETWEEN 18 AND 25;
 
 SELECT * FROM students WHERE s_name="Abhimanyu";
 
+
+-- DAY 3 
+
+
+SELECT * FROM students ORDER BY s_name;
+
+SELECT * FROM students ORDER BY age;
+
+SELECT * FROM students ORDER BY age DESC;
+
+SELECT * FROM students ORDER BY age ASC LIMIT 3;
+
+UPDATE students SET age = 21, courses = 'Maths' WHERE enrollment_id = 20250005;
+
+UPDATE students SET age = 22, courses = 'Data Science' WHERE enrollment_id = 20250004;
+
+DELETE FROM students WHERE enrollment_id = 20250010;
+
+SELECT * FROM students;
