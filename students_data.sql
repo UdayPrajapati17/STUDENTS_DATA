@@ -63,3 +63,19 @@ UPDATE students SET age = 22, courses = 'Data Science' WHERE enrollment_id = 202
 DELETE FROM students WHERE enrollment_id = 20250010;
 
 SELECT * FROM students;
+
+-- DAY 4
+
+SELECT COUNT(*) FROM students;
+
+SELECT courses, COUNT(*) FROM students GROUP BY courses;
+
+SELECT * FROM students ORDER BY age DESC LIMIT 1;
+
+SELECT * FROM students ORDER BY age ASC LIMIT 1;
+
+SELECT * FROM students WHERE s_name LIKE '%u%';
+
+
+
+
