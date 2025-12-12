@@ -25,15 +25,10 @@ USE student_db;
 
 
 CREATE TABLE students (
-
     enrollment_id INT PRIMARY KEY,
-    
     s_name VARCHAR(20),
-    
     courses VARCHAR(25),
-    
     age TINYINT
-
 );
 
 
