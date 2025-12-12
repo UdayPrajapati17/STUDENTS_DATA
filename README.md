@@ -158,17 +158,11 @@ USE IT_Company;
 
 
 CREATE TABLE Employees (
-
     id INT PRIMARY KEY AUTO_INCREMENT,
-    
     name VARCHAR(50),
-    
     role VARCHAR(50),
-    
     salary INT,
-    
     gender VARCHAR(10)
-
 );
 
 
